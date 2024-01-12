@@ -32,6 +32,7 @@ Yes, you can still use greenfoot. Just go to into your file explorer to the proj
 Optionally, you can start greenfoot and open a project using the `src` folder. In greenfoot all features are still available, and you can switch between IntelliJ and greenfoot as you would like to.
 
 ### Tips when working in a team
+ - remove `greenfoot.project` from the index by executing `git rm --cached src/project.greenfoot` and adding this file to the `.gitignore`. This avoids probably a lot of unnecessarry merge conflicts.
  - use the setImage function within Actors for the images to be on the safe side when working in a team (ensures no failures when merging the project.greenfoot file)
  - use the setBackground function in world
  - use above functions once in the constructor to have an image set intially (otherwise greenfoot's foot will be used as placeholder)
